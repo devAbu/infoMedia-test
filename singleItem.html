@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online shop</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div id="navbar"></div>
+    <!-- END OF NAVBAR -->
+
+    <!-- PRODUCTS -->
+    <section class="products">
+        <div class="row">
+            <div class="col-6 text-center">
+                <div class="card">
+                    <img src="images/shirt1.png" alt="majica1" class="product_img">
+                </div>
+                <div class="thumbnail">
+                    <img src="images/shirt1.png" alt="majica1" height="100">
+                    <img src="images/shirt1.png" alt="majica1" height="100">
+                    <img src="images/shirt1.png" alt="majica1" height="100">
+                </div>
+            </div>
+            <div class="col-6">
+                <h1 class="product_name">Muska majica</h1>
+                <p class="product_price">$ <span>10</span></p>
+                <!-- TODO: kad se mijenja mora se i cijena promijeniti -->
+                <input type="number" placeholder="Kolicina" value="1" class="product_quantity">
+                <!-- TODO: kad klikne treba da se sacuva u cart...moze localStorage -->
+                <button class="product_button">Add to cart</button>
+                <h3>Description</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet aperiam cupiditate dicta eos animi
+                    ipsum, enim voluptatibus rem ab nobis ea praesentium expedita minima quod tempora eum culpa mollitia
+                    soluta.</p>
+            </div>
+        </div>
+    </section>
+    <!-- END OF PRODUCTS -->
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script src="js/include.js"></script>
+</body>
+
+</html>
