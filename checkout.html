@@ -45,21 +45,19 @@
             <div class="col-12">
                 <form>
                     <label for="name">Full name:</label>
-                    <input type="text" placeholder="Full name..." id="fullName">
+                    <input type="text" placeholder="Full name..." id="fullName" onkeydown="notNumber(event)"
+                        onkeyup="notNumber(event)">
                     <label for="address">Address:</label>
                     <input type="text" placeholder="Address..." id="address">
                     <label for="number">Phone number:</label>
-                    <input type="number" placeholder="ex. 000 111 222" id="number">
+                    <input type="number" placeholder="ex. 000 111 222" id="number" onkeydown="notLetter(event)"
+                        onkeyup="notLetter(event)">
                     <label for="email">Email address:</label>
                     <input type="email" placeholder="Email address:" id="email">
                     <button type="button" class="product_button" id="submitButton">Send</button>
                 </form>
             </div>
         </div>
-        <!-- TODO: validacija za ime: samo slova -->
-        <!-- TODO: validacija za telefon: samo brojevi, minimalno 9 brojeva (primjer: 000 111 222)...ne smije bit prazno -->
-        <!-- TODO: validacija za mail: mora bit u validnom formatu (ne provjeravat je li validan, samo da li je u dobrom formatu) -->
-        <!-- TODO: na success forme izbaci se alert Narudzba poslana -->
     </section>
 
     <!-- JQUERY -->
