@@ -40,17 +40,12 @@ li a:hover {
     flex: 0 0 25%;
 }
 
-
-.col-4 {
-    width: 33.33%;
+.col-sm-12 {
+    width: 100%;
 }
 
 .col-6 {
     width: 50%;
-}
-
-.col-12 {
-    width: 100%;
 }
 
 .products {
@@ -71,6 +66,10 @@ li a:hover {
 .product_name {
     color: rgb(75, 74, 74);
     margin: 1em;
+}
+
+.product_price {
+    margin: 1.5em;
 }
 
 .product_quantity {
@@ -97,9 +96,12 @@ li a:hover {
 }
 
 .thumbnail img {
-    padding-right: 5em;
-    padding-left: 5em;
+    margin-right: 4em;
+    margin-left: 4em;
     margin-top: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 26, 255, 0.5);
+    padding: 1em;
+
 }
 
 .product_button {
@@ -155,4 +157,25 @@ form input[type=email]:focus {
 form label {
     font-size: 18px;
     font-weight: 800;
+}
+
+/* RESPONSIVE */
+
+
+@media only screen and (max-width: 540px) {
+    .col-12 {
+        width: 100%;
+    }
+
+    .card .product_img {
+        height: 175px;
+    }
+
+    .thumbnail img {
+        margin-left: 2.5em;
+    }
+
+    .delete_button {
+        margin-bottom: 0.5em;
+    }
 }
