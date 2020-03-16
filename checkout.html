@@ -17,12 +17,48 @@
     <!-- END OF NAVBAR -->
 
     <section class="checkout">
-        <!-- TODO: tabela ista ko i u cart...ne moze mijenat kolicinu ili brisat -->
-        <!-- TODO: forma za narudzbu: ime i prezime, adresa, broj telefona, mail -->
-        <!-- TODO: validacija za ime: samo slova, ne smije bit prazno -->
-        <!-- TODO: validacija za adresu: ne moze biti prazno -->
+        <div class="row">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="images/shirt1.png" alt="majica1" width="100"></td>
+                        <td>Muska majica</td>
+                        <td>$<span></span></td>
+                        <!-- Kolicina iz localStorage -->
+                        <!-- Da se i cijena updatuje -->
+                        <td> <input type="number" placeholder="Kolicina" class="product_quantity" readonly>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="row mt-1-5">
+            <div class="col-12">
+                <form>
+                    <label for="name">Full name:</label>
+                    <input type="text" placeholder="Full name..." id="fullName">
+                    <label for="address">Address:</label>
+                    <input type="text" placeholder="Address..." id="address">
+                    <label for="number">Phone number:</label>
+                    <input type="number" placeholder="ex. 000 111 222" id="number">
+                    <label for="email">Email address:</label>
+                    <input type="email" placeholder="Email address:" id="email">
+                    <button type="button" class="product_button" id="submitButton">Send</button>
+                </form>
+            </div>
+        </div>
+        <!-- TODO: validacija za ime: samo slova -->
         <!-- TODO: validacija za telefon: samo brojevi, minimalno 9 brojeva (primjer: 000 111 222)...ne smije bit prazno -->
-        <!-- TODO: validacija za mail: mora bit u validnom formatu (ne provjeravat je li validan, samo da li je u dobrom formatu)...ne smije bit prazno -->
+        <!-- TODO: validacija za mail: mora bit u validnom formatu (ne provjeravat je li validan, samo da li je u dobrom formatu) -->
         <!-- TODO: na success forme izbaci se alert Narudzba poslana -->
     </section>
 
@@ -31,6 +67,7 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
     <script src="js/include.js"></script>
+    <script src="js/chekcout.js"></script>
 </body>
 
 </html>

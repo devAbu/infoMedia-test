@@ -17,9 +17,32 @@
     <!-- END OF NAVBAR -->
 
     <section class="my_cart">
-        <!-- TODO: tabale u kojoj ce bit, fotografija, ime, cijena i selektor za cijenu -->
-        <!-- TODO: mogucnost brisanja -->
-        <!-- TODO: mogucnost editovanja kolicine -->
+        <div class="row">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="images/shirt1.png" alt="majica1" width="100"></td>
+                        <td>Muska majica</td>
+                        <td>$<span></span></td>
+                        <td> <input type="number" placeholder="Kolicina" class="product_quantity">
+                        </td>
+                        <td>
+                            <button class="product_button delete_button">Delete</button>
+                            <button class="product_button" id="checkoutButton">Next</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </section>
 
     <!-- JQUERY -->
@@ -27,6 +50,7 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
     <script src="js/include.js"></script>
+    <script src="js/myCart.js"></script>
 </body>
 
 </html>
