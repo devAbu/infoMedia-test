@@ -29,4 +29,8 @@ $(function () {
         window.location.href = "checkout.html";
 
     })
+
+    $('.delete_button').click(() => {
+        $('tbody').empty()
+    })
 })
