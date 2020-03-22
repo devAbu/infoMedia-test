@@ -145,6 +145,7 @@ form input[type=email] {
     display: block;
     border: none;
     margin: 5px auto 10px auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 26, 255, 0.5);
 }
 
 form input[type=text]:focus,
@@ -177,10 +178,18 @@ form label {
     }
 
     .thumbnail img {
-        margin-left: 2.5em;
+        margin-left: 1.5em;
     }
 
     .delete_button {
         margin-bottom: 0.5em;
+    }
+
+    .product_button {
+        margin-top: 1rem;
+    }
+
+    .product_quantity {
+        padding: 0.8em;
     }
 }
